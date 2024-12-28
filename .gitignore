@@ -1,0 +1,7 @@
+.DS_Store
+*.img
+*.qcow2
+vmlinuz
+initrd.img
+initramfs_2712
+initramfs8
