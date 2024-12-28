@@ -15,7 +15,7 @@
 
 ### Copy Kernel and Initram from Pop_OS! Image
 
-If you have a Pop_OS! image, you can copy its kernel and initram from it.
+If you have a Pop_OS! image, you can copy its kernel and initram from it. After mounting raw image via Finder copy kernel and initrd. Rename to ```vmlinuz``` and ```initrd.img```.
 
 ### Convert Disk Image
 
@@ -40,16 +40,16 @@ The scripts use a user mode network setup. This allows for host-to-guest and gue
 
 ## Example Usage
 
-To convert an image file named `server.img` to a QCOW2 format:
+To convert an image file named `2024-11-19-raspios-bookworm-arm64.img` to a QCOW2 format:
 
 ```bash
-./convert-image.sh server.img converted_server.qcow2
+./convert-image.sh 2024-11-19-raspios-bookworm-arm64.img raspian.qcow2
 ```
 
 Then, run the virtual machine:
 
 ```bash
-./run.sh converted_server.qcow2
+./run.sh raspian.qcow2
 ```
 
 ## Troubleshooting
